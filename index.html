@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="FluidSIM 3.6 视频速学指南与液压实训现场速查。">
+  <meta name="description" content="获取用于液压与气动仿真的 FluidSIM 3.6 Windows 安装资料。">
   <title>液压实训资料站 · FluidSIM 3.6</title>
   <link rel="icon" href="./favicon.ico">
   <script src="./theme.js"></script>
@@ -20,11 +20,25 @@
   <main class="home">
     <section class="intro">
       <p class="eyebrow">FluidSIM 3.6</p>
-      <h1>液压实训资料站</h1>
-      <p class="lede">在 201 跟做回路仿真，到 109 用速查表记录实物现象。</p>
-      <a class="resume control" id="resume" hidden></a>
+      <h1><button class="title-press" id="page-title" type="button">液压实训资料站</button></h1>
     </section>
-    <section aria-label="实训资料" class="library">
+    <section class="install-panel" aria-labelledby="install-title">
+      <div class="install-info">
+        <p class="eyebrow">Windows 安装</p>
+        <h2 id="install-title">FluidSIM 3.6 安装包</h2>
+        <p>内含安装程序和中文手册。按手册选择液压 H 版或气动 P 版，并准备对应的授权。</p>
+      </div>
+      <div class="install-action">
+        <a class="control primary" id="download-install" href="./assets/setup/fluidsim-3-6-installation.zip" download="FluidSIM 3.6 安装资料.zip">下载安装包</a>
+        <span>ZIP · 约 36 MB</span>
+      </div>
+    </section>
+    <section id="learning-materials" class="learning-materials" aria-label="实训资料" tabindex="-1" hidden>
+      <a class="resume control" id="resume" hidden></a>
+      <div id="library" class="library"></div>
+      <footer class="home-footer">阅读进度保存在当前浏览器。</footer>
+    </section>
+    <template id="learning-template">
       <article class="document-card" data-doc-card="guide">
         <a class="cover" href="./read.html?doc=guide" aria-label="阅读 FluidSIM 3.6 视频速学指南">
           <img src="./assets/covers/guide.webp" width="1152" height="648" alt="FluidSIM 3.6 视频速学指南封面">
@@ -55,8 +69,7 @@
           </div>
         </div>
       </article>
-    </section>
-    <footer class="home-footer">阅读进度保存在当前浏览器。</footer>
+    </template>
   </main>
 </body>
 </html>
