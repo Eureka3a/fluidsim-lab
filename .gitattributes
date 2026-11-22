@@ -3,3 +3,4 @@
 *.ico binary
 vendor/pdfjs/* -text
 *.zip binary
+*.rar binary
