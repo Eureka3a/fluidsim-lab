@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>阅读资料 · 液压实训</title>
+  <link rel="icon" href="./favicon.ico">
+  <script src="./theme.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./reader.js"></script>
+</head>
+<body class="reading">
+  <header class="reader-header">
+    <a class="control back" href="./">资料站</a>
+    <h1 id="document-title">阅读资料</h1>
+    <div class="reader-links">
+      <button class="control theme-toggle" type="button" data-theme-toggle>日间模式</button>
+      <a class="control primary" id="download" download hidden>下载 PDF</a>
+    </div>
+  </header>
+  <nav class="reader-tools" aria-label="PDF 阅读工具">
+    <div class="toolbar-inner">
+      <div class="tool-group" aria-label="页码">
+        <button class="control nav-button" id="prev" type="button" aria-label="上一页" title="上一页" disabled><span aria-hidden="true">‹</span></button>
+        <form class="page-jump" id="jump" aria-label="跳转页码">
+          <input id="page-number" type="text" inputmode="numeric" pattern="[0-9]*" autocomplete="off" aria-label="当前页码" value="1" disabled>
+          <span id="page-total">/ —</span>
+        </form>
+        <button class="control nav-button" id="next" type="button" aria-label="下一页" title="下一页" disabled><span aria-hidden="true">›</span></button>
+      </div>
+      <div class="tool-group zoom-tools" aria-label="缩放">
+        <button class="control" id="zoom-out" type="button" aria-label="缩小" title="缩小" disabled>−</button>
+        <output id="zoom-level" aria-label="相对适应宽度的缩放比例">100%</output>
+        <button class="control" id="zoom-in" type="button" aria-label="放大" title="放大" disabled>+</button>
+        <button class="control fit" id="fit" type="button" aria-pressed="true" disabled>适应宽度</button>
+      </div>
+    </div>
+  </nav>
+  <main class="reader-stage" id="stage" tabindex="0" aria-label="PDF 阅读区">
+    <div class="reader-message" id="message" role="status"><p id="message-text">正在打开 PDF…</p><a class="control" id="open-original" target="_blank" rel="noopener" hidden>打开原 PDF</a></div>
+    <div class="page-wall" id="pages" hidden></div>
+    <noscript><p class="reader-message">开启 JavaScript 后可在线阅读，也可回资料站下载原 PDF。</p></noscript>
+  </main>
+</body>
+</html>
