@@ -6,7 +6,7 @@ const library = document.getElementById("library");
 const template = document.getElementById("learning-template");
 const resume = document.getElementById("resume");
 const unlockKey = "fluidsim-lab:materials-unlocked";
-const clickGap = 1600;
+const clickGap = 2600;
 const requiredClicks = 5;
 const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)");
 
@@ -18,7 +18,8 @@ function showProgress() {
   let mostRecent;
   for (const doc of documents) {
     const saved = readProgress(doc);
-    const status = library.querySelector('[data-doc-card="' + doc.id + '"] [data-progress]');
+    const status = document.querySelector('[data-doc-card="' + doc.id + '"] [data-progress]');
+    if (!status) continue;
     status.hidden = !saved;
     if (!saved) continue;
     status.textContent = "读到第 " + saved.page + " 页";

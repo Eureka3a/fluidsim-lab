@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="获取用于液压与气动仿真的 FluidSIM 3.6 Windows 安装资料。">
+  <meta name="description" content="获取 FluidSIM 3.6 安装资料、液压与气压实训课件和现场速查。">
   <title>液压实训资料站 · FluidSIM 3.6</title>
   <link rel="icon" href="./favicon.ico">
   <script src="./theme.js"></script>
@@ -20,18 +20,48 @@
   <main class="home">
     <section class="intro">
       <p class="eyebrow">FluidSIM 3.6</p>
-      <h1><button class="title-press" id="page-title" type="button">液压实训资料站</button></h1>
+      <h1 id="page-title" class="title-press">液压实训资料站</h1>
+      <p class="lede">明天在 201 做回路设计和仿真，到 109 做实操；先看 02 换向和 06 调速。</p>
     </section>
     <section class="install-panel" aria-labelledby="install-title">
       <div class="install-info">
         <p class="eyebrow">Windows 安装</p>
         <h2 id="install-title">FluidSIM 3.6 安装包</h2>
-        <p>内含安装程序和中文手册。按手册选择液压 H 版或气动 P 版，并准备对应的授权。</p>
+        <p>内含安装程序和中文手册，不含替换文件或序列号。液压实训选 H 版，气动练习选 P 版，并准备对应的授权。</p>
       </div>
       <div class="install-action">
         <a class="control primary" id="download-install" href="./assets/setup/fluidsim-3-6-installation.zip" download="FluidSIM 3.6 安装资料.zip">下载安装包</a>
         <span>ZIP · 约 36 MB</span>
       </div>
+    </section>
+    <section class="courseware" aria-labelledby="courseware-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">实训课件</p>
+          <h2 id="courseware-title">液压与气压实训实验</h2>
+        </div>
+        <p>28 页 · 7 个实验 · 先看 02 和 06</p>
+      </div>
+      <article class="document-card feature-card" data-doc-card="slides">
+        <a class="cover" href="./read.html?doc=slides" aria-label="在线阅读液压与气压实训实验课件">
+          <img src="./assets/covers/slides.webp" width="1200" height="675" alt="液压与气压传动实训实验课件封面">
+        </a>
+        <div class="card-body">
+          <div class="card-label"><span>授课课件</span><span>28 页</span></div>
+          <h2>液压与气压实训实验</h2>
+          <p>7 个实验的回路图、元件表、仿真曲线和 13 步实验过程。明天重点看 02 三位四通换向和 06 调速回路。</p>
+          <ul class="feature-points">
+            <li>01–07 七个实验</li>
+            <li>回路图 + 元件表 + 仿真曲线</li>
+            <li>02 换向 / 06 调速优先</li>
+          </ul>
+          <div class="card-actions">
+            <a class="control primary" href="./read.html?doc=slides">在线阅读</a>
+            <a class="control" href="./assets/pdf/%E6%B6%B2%E5%8E%8B%E4%B8%8E%E6%B0%94%E5%8E%8B%E5%AE%9E%E8%AE%AD%E5%AE%9E%E9%AA%8C-%E6%8E%88%E8%AF%BE%E7%94%A8.pdf" download="液压与气压实训实验-授课用.pdf">下载 PDF</a>
+            <a class="control" href="./assets/slides/%E6%B6%B2%E5%8E%8B%E4%B8%8E%E6%B0%94%E5%8E%8B%E5%AE%9E%E8%AE%AD%E5%AE%9E%E9%AA%8C-%E6%8E%88%E8%AF%BE%E7%94%A8.pptx" download="液压与气压实训实验-授课用.pptx">下载 PPTX</a>
+          </div>
+        </div>
+      </article>
     </section>
     <section id="learning-materials" class="learning-materials" aria-label="实训资料" tabindex="-1" hidden>
       <a class="resume control" id="resume" hidden></a>

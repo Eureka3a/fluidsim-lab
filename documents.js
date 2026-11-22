@@ -1,4 +1,5 @@
 export const documents = [
+  { id: "slides", title: "液压与气压实训实验-授课用", total: 28, shortTitle: "实训课件" },
   { id: "guide", title: "FluidSIM 3.6 视频速学指南", total: 11, shortTitle: "视频速学指南" },
   { id: "reference", title: "液压实训现场速查", total: 7, shortTitle: "现场速查" },
 ];
